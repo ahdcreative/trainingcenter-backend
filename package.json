@@ -1,0 +1,52 @@
+{
+    "name": "trainingcenter-backend",
+    "version": "0.0.1",
+    "main": "index.js",
+    "author": "AHDCreative <hello@ahd-creative.agency>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:ahdcreative/trainingcenter-backend.git"
+    },
+    "scripts": {
+        "dev": "tsc && node ./dist/Application.js",
+        "build": "tsc",
+        "run": "node ./dist/Application.js",
+        "seq": "npx sequelize-cli --options-path=db/config/options.js",
+        "prettier:check": "npx prettier --check **/*.{ts,js}",
+        "prettier:write": "px prettier --write .",
+        "app-key:generate": "node misc/GenerateAppKey.js"
+    },
+    "dependencies": {
+        "@types/body-parser": "^1.19.5",
+        "@types/cookie-parser": "^1.4.6",
+        "@types/express": "^4.17.21",
+        "@types/express-fileupload": "^1.4.4",
+        "@types/node": "^20.10.2",
+        "@types/node-cron": "^3.0.11",
+        "@types/sequelize": "^4.28.19",
+        "@types/ua-parser-js": "^0.7.39",
+        "@types/uuid": "^9.0.7",
+        "axios": "^1.6.2",
+        "body-parser": "^1.20.2",
+        "cookie-parser": "^1.4.6",
+        "cron-parser": "^4.9.0",
+        "dayjs": "^1.11.10",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-fileupload": "^1.4.3",
+        "mysql2": "^3.6.5",
+        "node-cron": "^3.0.3",
+        "sequelize": "^6.35.1",
+        "sequelize-typescript": "^2.1.6",
+        "ua-parser-js": "^1.0.37",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.17",
+        "cors": "^2.8.5",
+        "prettier": "^3.1.0",
+        "sequelize-cli": "^6.6.2",
+        "typescript": "^5.3.2"
+    }
+}
